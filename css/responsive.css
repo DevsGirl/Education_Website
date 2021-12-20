@@ -1,0 +1,64 @@
+@media (max-width: 940px) {
+  .nav-toggle-label {
+    display: block;
+  }
+  .navigation {
+    position: absolute;
+    width: calc(100% - 35px);
+    top: 80px;
+    left: 0;
+    padding: 20px 0 20px 35px;
+    z-index: 99;
+    margin: 0;
+    background: #FFC178;
+    transform: translateY(-500px);
+    transform-origin: top;
+    transition: 0.3s linear;
+  }
+  .navigation li {
+    display: block;
+    margin-top: 10px;
+  }
+  #nav-toggle:checked ~ .navigation {
+    transform: translateY(0px);
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #footer-menu {
+    display: none;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .services-container,
+  .work-container,
+  .team-container,
+  .pricing-container,
+  .stats-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .depart-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+  }
+  .learning-area{
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: -40px;
+  }
+  header {
+    background: url(../img/banner.png);
+    height: 100vh;
+    width: 100vw;
+  }
+}
