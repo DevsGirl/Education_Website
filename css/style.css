@@ -260,6 +260,7 @@ color: #5a6e79;
   font-size: 14px;
   border-radius: none;
   margin-left: -25px;
+  border: 0;
 }
 
 #footer-menu ul {
